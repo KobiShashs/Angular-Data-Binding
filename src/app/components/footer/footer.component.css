@@ -1,0 +1,28 @@
+div{
+  height: 100%;
+  background-color: red;
+  text-align: center;
+  font-family: 'Gill Sans';
+}
+
+a {
+    color: white;
+    text-decoration:dashed;
+}
+
+a:hover 
+{
+     color:rosybrown;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+p{
+  margin: 0;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: large;
+  color: white;
+  
+}

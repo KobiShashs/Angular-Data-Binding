@@ -1,0 +1,54 @@
+div{
+  height: 100%;
+  background-color: blue;
+  text-align: center;
+  font-family: 'Gill Sans';
+}
+
+logoImage{
+  text-align: start;
+}
+
+img{
+  width: 100px;
+  height: 50px;
+  top: 50%;
+  position: relative;
+  margin: 5px;
+  transform: translateY(-50%);
+  vertical-align: middle;
+  float: left;
+}
+  
+
+a {
+    color: white;
+    text-decoration:dashed;
+}
+
+a:hover 
+{
+     color:rosybrown;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+p{
+  margin: 0;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: large;
+  color: white;
+  
+}
+
+h1{
+  margin: 0;
+  position: relative;
+  color: white;
+  top:50%;
+  font-size: 40px;
+  transform: translateY(-50%);
+  
+}

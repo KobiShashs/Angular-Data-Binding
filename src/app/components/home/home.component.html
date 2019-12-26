@@ -1,0 +1,35 @@
+
+<label for="input">Shaked's Volume</label>
+<br>
+<br>
+<br>
+<br>
+<input type="range" class="form-control" value="5" min="0" max="10" step="1" [(ngModel)]="volume" #vol>
+<span>{{volume}}</span>
+
+    <ng-container *ngIf="volume<=3; then caseA; else caseB">
+    </ng-container>
+    <ng-template #caseA>
+        <app-green-square></app-green-square>
+        <p>{{vol.value}} Well done kid!</p>
+    </ng-template>
+    <ng-template #caseB>
+        <ng-container *ngIf="volume>=7">
+            <app-red-square></app-red-square>
+            <p>{{vol.value}} is too loady</p>
+        </ng-container>
+           
+    </ng-template>
+
+<!-- Structural Directive -->
+    <p *ngIf="volume<=3" >Shaked is a good student</p>
+
+<!-- Attribute Directive -->
+    <p ngClass="greenish" >Shaked is a good student</p>
+
+<p>Shaked's Set Skills</p>
+<p >{{professions}}</p>
+<p *ngFor="let prof of professions" >{{prof}}</p>
+
+
+

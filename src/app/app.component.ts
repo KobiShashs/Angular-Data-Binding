@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  title = 'MySite';
+  title = 'Shaked be quite!';
   public volume:number = 5;
   public grade:number =50;
+  public d:Date;
 
 
 
@@ -17,6 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.d = new Date();
   }
 
   public buttonClicked(): void {
