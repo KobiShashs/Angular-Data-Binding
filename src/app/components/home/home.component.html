@@ -7,7 +7,7 @@
 <input type="range" class="form-control" value="5" min="0" max="10" step="1" [(ngModel)]="volume" #vol>
 <span>{{volume}}</span>
 
-    <ng-container *ngIf="volume<=3; then caseA; else caseB">
+     <ng-container *ngIf="volume<=3; then caseA; else caseB">
     </ng-container>
     <ng-template #caseA>
         <app-green-square></app-green-square>
@@ -20,16 +20,17 @@
         </ng-container>
            
     </ng-template>
-
-<!-- Structural Directive -->
-    <p *ngIf="volume<=3" >Shaked is a good student</p>
+<!-- 
+Structural Directive -->
+    <p *ngIf="volume<=3">Shaked is a good student</p>
+    <p *ngIf="volume>=7">Shaked is a bad boy!</p>
 
 <!-- Attribute Directive -->
-    <p ngClass="greenish" >Shaked is a good student</p>
+     <p ngClass="greenish" >Shaked is a good student</p>
 
 <p>Shaked's Set Skills</p>
 <p >{{professions}}</p>
-<p *ngFor="let prof of professions" >{{prof}}</p>
+<p *ngFor="let prof of professions" >{{prof}}</p> -->
 
 
 
