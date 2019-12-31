@@ -13,3 +13,7 @@ a {
 }
 
 
+.router-link-active{
+  font-size: large;
+  color: palevioletred;;
+}
