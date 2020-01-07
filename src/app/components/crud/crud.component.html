@@ -1,0 +1,25 @@
+<div>
+
+    <h1>All Coupons</h1>
+<!-- <p>{{subjects}}</p> -->
+
+
+<!-- <p *ngFor="let item of subjects" >{{item}}</p> -->
+
+    <table>
+    
+        <tr>
+            <th>Coupon Name</th>
+            <th>Coupon Amount</th>
+            <th>Coupon Owner</th>
+        </tr>
+
+        <tr *ngFor="let c of coupons" >
+    
+            <td>{{c.copoun_name}}</td>
+            <td>{{c.coupon_amount}}</td>
+            <td>{{c.coupon_owner}} </td>
+        </tr>
+        </table>
+
+</div>

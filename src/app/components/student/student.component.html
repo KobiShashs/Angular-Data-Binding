@@ -1,0 +1,5 @@
+<p>{{studentName}}</p>
+
+<input type="range" class="form-control" value="{{studentVolume}}" min="0" max="10" step="1" [(ngModel)]="studentVolume" (input)="onUpdteRange($event)">
+
+<p [ngClass]="studentVolume>=7 ? 'bad' : ( studentVolume<=3 ? 'good' : 'avg')">level of noise : {{studentVolume}}</p>

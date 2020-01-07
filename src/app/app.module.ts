@@ -10,7 +10,11 @@ import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { MenuComponent } from './components/menu/menu.component'
+import { MenuComponent } from './components/menu/menu.component';
+import { TodayComponent } from './components/today/today.component';
+import { NoiseComponent } from './components/noise/noise.component';
+import { StudentComponent } from './components/student/student.component';
+import { CrudComponent } from './components/crud/crud.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { MenuComponent } from './components/menu/menu.component'
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    TodayComponent,
+    NoiseComponent,
+    StudentComponent,
+    CrudComponent
   ],
   imports: [
     BrowserModule,

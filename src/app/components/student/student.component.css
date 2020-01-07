@@ -1,0 +1,17 @@
+.good{
+    color: darkgreen;
+    font-size: large;
+    font-weight: bold;
+}
+
+.bad{
+    color: darkred;
+    font-size: large;
+    font-weight: bold;
+}
+
+.avg{
+    color: darkgoldenrod;
+    font-size: large;
+    font-weight: bold;
+}
