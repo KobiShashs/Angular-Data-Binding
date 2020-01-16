@@ -14,7 +14,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { TodayComponent } from './components/today/today.component';
 import { NoiseComponent } from './components/noise/noise.component';
 import { StudentComponent } from './components/student/student.component';
-import { CrudComponent } from './components/crud/crud.component'
+import { CrudComponent } from './components/crud/crud.component';
+import { ProductsComponent } from './components/products/products.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CrudComponent } from './components/crud/crud.component'
     TodayComponent,
     NoiseComponent,
     StudentComponent,
-    CrudComponent
+    CrudComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
