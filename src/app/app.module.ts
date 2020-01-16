@@ -15,7 +15,8 @@ import { TodayComponent } from './components/today/today.component';
 import { NoiseComponent } from './components/noise/noise.component';
 import { StudentComponent } from './components/student/student.component';
 import { CrudComponent } from './components/crud/crud.component';
-import { ProductsComponent } from './components/products/products.component'
+import { ProductsComponent } from './components/products/products.component';
+import { AdiComponent } from './componenets/adi/adi.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProductsComponent } from './components/products/products.component'
     NoiseComponent,
     StudentComponent,
     CrudComponent,
-    ProductsComponent
+    ProductsComponent,
+    AdiComponent
   ],
   imports: [
     BrowserModule,

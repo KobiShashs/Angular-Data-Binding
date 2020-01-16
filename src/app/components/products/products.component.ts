@@ -19,30 +19,27 @@ export class ProductsComponent implements OnInit {
     this.title.setTitle('Our Products');
     console.log('START');
 
-    	const arr: Product[] = [];
-      arr.push(new Product(1, 'Pizza + Drink + Icecream', 69.9, 100));
-      arr.push(new Product(2, '2 Litter buttle ', 4.99, 100));
-      arr.push(new Product(3, 'Mambo Jambo Coffee ', 8.99, 50));
-      return arr;
-    // synchronic call
+    // Synchronous call
     // this.products = this.productsService.getAllProducts();
+    // console.log(this.products);
 
-    // asynchronic call using callback
-    // this.productsService.getAllProductsAsync1((products) => {
-    //   this.products = products;
-    //   console.log('Success');
-    // }, () => {
-    //   console.log('Falied');
+    // Asynchronous call using callback
+    // this.productsService.getAllProductsAsync1(
+    //   (products) => {
+    //   this.products = products; console.log('success');
+    //   },
+    //   () => { console.log('Error...') }
+    // );
 
-    // });
-    //console.log(this.prooducts);//not allowed
-
-    // asynchronic call using promise
+    // Asynchronic call using promise
     // this.productsService.getAllProductsAsync2().then(products => {
-    //   this.products = products;
+    // this.products = products;
     // }).catch(err => {
-    //   alert('Error: ' + err);
+    // alert('Error: ' + err);
     // });
+
+
+    // Asynchronic call using observable
     this.productsService.getAllProductsAsync3().subscribe(
       products => {
         this.products = products;
@@ -50,10 +47,15 @@ export class ProductsComponent implements OnInit {
       err => {
         console.log(err);
       });
-    console.log('END');
 
+
+    console.log('END');
   }
 
 
 
 }
+
+
+
+
