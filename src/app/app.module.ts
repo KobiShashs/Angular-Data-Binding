@@ -16,7 +16,8 @@ import { NoiseComponent } from './components/noise/noise.component';
 import { StudentComponent } from './components/student/student.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { ProductsComponent } from './components/products/products.component';
-import { AdiComponent } from './componenets/adi/adi.component'
+import { HttpClientModule } from '@angular/common/http';
+import { SingleProductComponent } from './components/single-product/single-product.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +34,13 @@ import { AdiComponent } from './componenets/adi/adi.component'
     StudentComponent,
     CrudComponent,
     ProductsComponent,
-    AdiComponent
+    SingleProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

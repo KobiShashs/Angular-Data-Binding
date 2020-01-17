@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NoiseComponent } from './components/noise/noise.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { ProductsComponent } from './components/products/products.component';
+import { SingleProductComponent } from './components/single-product/single-product.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
  {path: 'noise', component: NoiseComponent},
  {path: 'crud', component: CrudComponent},
  {path: 'products', component: ProductsComponent},
+ {path: 'single-product/:id',component: SingleProductComponent},
  {path: '', redirectTo: 'home', pathMatch: 'full'},
  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 

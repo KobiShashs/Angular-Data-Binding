@@ -1,7 +1,5 @@
 <img *ngIf="!products" src="/assets/images/loading.gif" >
 
-
-
 <div *ngIf="products">
 <table>
 <tr>
@@ -12,7 +10,10 @@
 </tr>
 <tr *ngFor="let p of products">
     <td>{{p.id}}</td>
-    <td>{{p.name}}</td>
+
+    <a routerLink="/single-product/{{p.id}}" routerLinkActive="router-link-active"> 
+        <td>{{p.name}}</td>
+    </a>
     <td>{{p.price}}</td>
     <td>{{p.amount}}</td>
 </tr>

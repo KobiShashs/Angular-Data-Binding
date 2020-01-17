@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Product } from 'src/models/Product';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  constructor() { }
+  public constructor(private httpClient: HttpClient) { }
 
   public getAllProducts(): Product[] {
     const arr: Product[] = [];
@@ -64,6 +65,12 @@ export class ProductsService {
       }, 3000);
     });
   }
+
+  public getAllProductsAsync4(): Observable<Product[]> {
+    // tslint:disable-next-line: deprecation
+    return this.httpClient.get<Product[]>('/assets/json/products.json', { withCredentials: true });
+  }
+
 
 
 }

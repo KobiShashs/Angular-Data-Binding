@@ -21,32 +21,26 @@ export class ProductsComponent implements OnInit {
 
     // Synchronous call
     // this.products = this.productsService.getAllProducts();
-    // console.log(this.products);
+    //console.log(this.products);
 
     // Asynchronous call using callback
-    // this.productsService.getAllProductsAsync1(
-    //   (products) => {
-    //   this.products = products; console.log('success');
-    //   },
-    //   () => { console.log('Error...') }
-    // );
+    // this.productsService.getAllProductsAsync1((products) => {
+    //   this.products = products;
+    //   console.log(products);
+    // }, (err) => { console.log(err.message) });
 
     // Asynchronic call using promise
-    // this.productsService.getAllProductsAsync2().then(products => {
-    // this.products = products;
-    // }).catch(err => {
-    // alert('Error: ' + err);
-    // });
+    // this.productsService.getAllProductsAsync2().then((products) => {
+    //   this.products = products;
+    //   console.log(products);
+    // }
+    // ).catch((err) => { console.log(err.message)});
 
 
     // Asynchronic call using observable
-    this.productsService.getAllProductsAsync3().subscribe(
-      products => {
-        this.products = products;
-      },
-      err => {
-        console.log(err);
-      });
+    this.productsService.getAllProductsAsync4()
+    .subscribe((products)=>{this.products=products},
+                          (err)=>{console.log(err.message)});
 
 
     console.log('END');
